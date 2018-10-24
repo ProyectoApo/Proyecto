@@ -11,4 +11,4 @@ public class ComparadorNombre implements Comparator<Jugador> {
 	}
 
 }
-//sapo perro
+//sapo perro a ver al sine perro
