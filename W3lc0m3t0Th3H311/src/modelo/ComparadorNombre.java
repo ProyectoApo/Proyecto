@@ -14,3 +14,4 @@ public class ComparadorNombre implements Comparator<Jugador> {
 //sapo perro a ver al sine perro
 // staga me la pela
 // scroto
+//Que putas?
