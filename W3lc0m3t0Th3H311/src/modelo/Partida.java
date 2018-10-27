@@ -52,7 +52,7 @@ public class Partida {
 	// Crea los personajes de la partida.
 	public void cargarPersonajes() {
 
-		Personaje fariñez = new Personaje(Personaje.FARIÑEZ, 1, random.nextInt(X_MAX + 1 - (X_MIN)) + X_MIN,
+		Personaje farinhez = new Personaje(Personaje.FARINHEZ, 1, random.nextInt(X_MAX + 1 - (X_MIN)) + X_MIN,
 				random.nextInt(Y_RANDOM));
 		Personaje cristian = new Personaje(Personaje.CRISTIAN, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
 				random.nextInt(Y_RANDOM));
@@ -83,7 +83,7 @@ public class Partida {
 		nuevo[7] = bustamante;
 		int pos = 0;
 		if (actual == null) {
-			primero = fariñez; 
+			primero = farinhez; 
 			primero.setSiguente(primero);
 		}else {
 			 while(actual.getSiguente() != null){
