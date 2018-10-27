@@ -52,7 +52,7 @@ public class Partida {
 	// Crea los personajes de la partida.
 	public void cargarPersonajes() {
 
-		Personaje fariÃ±ez = new Personaje(Personaje.FARIÃ‘EZ, 1, random.nextInt(X_MAX + 1 - (X_MIN)) + X_MIN,
+		Personaje fariñez = new Personaje(Personaje.FARIÑEZ, 1, random.nextInt(X_MAX + 1 - (X_MIN)) + X_MIN,
 				random.nextInt(Y_RANDOM));
 		Personaje cristian = new Personaje(Personaje.CRISTIAN, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
 				random.nextInt(Y_RANDOM));
@@ -71,20 +71,29 @@ public class Partida {
 		Personaje bustamante = new Personaje(Personaje.BUSTAMANTE, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
 				random.nextInt(3000));
 
-
-//		personajes[0] = fariÃ±ez;
-//		personajes[1] = sosa;
-//		personajes[2] = cristian;
-//		personajes[3] = jazmin;
-//		personajes[4] = cuartas;
-//		personajes[5] = jacker;
-//		personajes[6] = miguel;
-//		personajes[7] = omar;
-//		personajes[8] = bustamante;
-
-
+		Personaje actual = primero;
+		Personaje[] nuevo = new Personaje[8];
+		nuevo[0] = cristian;
+		nuevo[1] = jazmin;
+		nuevo[2] = sosa;
+		nuevo[3] = cuartas;
+		nuevo[4] = jacker;
+		nuevo[5] = miguel;
+		nuevo[6] = omar;
+		nuevo[7] = bustamante;
+		int pos = 0;
+		if (actual == null) {
+			primero = fariñez; 
+			primero.setSiguente(primero);
+		}else {
+			 while(actual.getSiguente() != null){
+	                actual = actual.getSiguente();
+	            }
+	            actual.setSiguente(nuevo[pos]);
+	            pos++;
+		}
 	}
-
+	
 	public ArrayList<Jugador> getPlayers() {
 
 		return players;
