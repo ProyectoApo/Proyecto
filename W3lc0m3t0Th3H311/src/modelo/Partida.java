@@ -34,7 +34,7 @@ public class Partida {
 
 	// Atributos
 	private ArrayList<Jugador> players;
-	private Personaje[] personajes;
+	private Personaje primero;
 	private int nivel;
 	private Random random = new Random();
 
@@ -43,7 +43,7 @@ public class Partida {
 
 		players = new ArrayList<Jugador>();
 		this.nivel = nivel;
-		personajes = new Personaje[9];
+		primero = null;
 
 		cargarPersonajes();
 
@@ -71,15 +71,15 @@ public class Partida {
 		Personaje whale = new Personaje(Personaje.WHALE, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
 				random.nextInt(3000));
 
-		personajes[0] = dory;
-		personajes[1] = manta;
-		personajes[2] = nemo;
-		personajes[3] = turtle;
-		personajes[4] = marlin;
-		personajes[5] = pulpo;
-		personajes[6] = shark;
-		personajes[7] = turtleBaby;
-		personajes[8] = whale;
+//		personajes[0] = dory;
+//		personajes[1] = manta;
+//		personajes[2] = nemo;
+//		personajes[3] = turtle;
+//		personajes[4] = marlin;
+//		personajes[5] = pulpo;
+//		personajes[6] = shark;
+//		personajes[7] = turtleBaby;
+//		personajes[8] = whale;
 
 	}
 
@@ -111,16 +111,16 @@ public class Partida {
 	// cuando lo finalice.
 	public void resetProceso() {
 
-		for (int i = 0; i < personajes.length; i++) {
-
-			if (personajes[i].getPosX() >= 1200) {
-
-				personajes[i].setPosX(random.nextInt(X_MAX + 1 - (X_MIN)) + X_MIN);
-				personajes[i].setPosY(random.nextInt(Y_RANDOM));
-
-			}
-
-		}
+//		for (int i = 0; i < personajes.length; i++) {
+//
+//			if (personajes[i].getPosX() >= 1200) {
+//
+//				personajes[i].setPosX(random.nextInt(X_MAX + 1 - (X_MIN)) + X_MIN);
+//				personajes[i].setPosY(random.nextInt(Y_RANDOM));
+//
+//			}
+//
+//		}
 
 	}
 
@@ -217,9 +217,9 @@ public class Partida {
 
 	}
 
-	public Personaje[] getPersonajes() {
+	public Personaje getPersonajes() {
 
-		return personajes;
+		return primero;
 
 	}
 }

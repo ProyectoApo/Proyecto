@@ -15,16 +15,16 @@ public class HiloPartidaMedio extends Thread {
 	@Override
 	public void run() {
 
-		Personaje[] personajes = partida.getPersonajes();
-
-		for (int i = 0; i < personajes.length; i++) {
-
-			personajes[i].setSpeed(Partida.MEDIO);
-			personajes[i].moveHorizontal();
-
-		}
-
-		partida.resetProceso();
+//		Personaje[] personajes = partida.getPersonajes();
+//
+//		for (int i = 0; i < personajes.length; i++) {
+//
+//			personajes[i].setSpeed(Partida.MEDIO);
+//			personajes[i].moveHorizontal();
+//
+//		}
+//
+//		partida.resetProceso();
 
 	}
 
