@@ -52,34 +52,34 @@ public class Partida {
 	// Crea los personajes de la partida.
 	public void cargarPersonajes() {
 
-		Personaje dory = new Personaje(Personaje.DORY, 1, random.nextInt(X_MAX + 1 - (X_MIN)) + X_MIN,
+		Personaje fariÃ±ez = new Personaje(Personaje.FARIÃ‘EZ, 1, random.nextInt(X_MAX + 1 - (X_MIN)) + X_MIN,
 				random.nextInt(Y_RANDOM));
-		Personaje nemo = new Personaje(Personaje.NEMO, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
+		Personaje cristian = new Personaje(Personaje.CRISTIAN, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
 				random.nextInt(Y_RANDOM));
-		Personaje turtle = new Personaje(Personaje.TURTLE, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
+		Personaje jazmin = new Personaje(Personaje.JAZMIN, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
 				random.nextInt(Y_RANDOM));
-		Personaje manta = new Personaje(Personaje.MANTA, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
+		Personaje sosa = new Personaje(Personaje.SOSA, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
 				random.nextInt(Y_RANDOM));
-		Personaje marlin = new Personaje(Personaje.MARLIN, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
+		Personaje cuartas = new Personaje(Personaje.CUARTAS, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
 				random.nextInt(Y_RANDOM));
-		Personaje pulpo = new Personaje(Personaje.PULPO, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
+		Personaje jacker = new Personaje(Personaje.JACKER, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
 				random.nextInt(Y_RANDOM));
-		Personaje shark = new Personaje(Personaje.SHARK, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
+		Personaje miguel = new Personaje(Personaje.MIGUEL, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
 				random.nextInt(Y_RANDOM));
-		Personaje turtleBaby = new Personaje(Personaje.TURTLE_BABY, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
+		Personaje omar = new Personaje(Personaje.OMAR, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
 				random.nextInt(Y_RANDOM));
-		Personaje whale = new Personaje(Personaje.WHALE, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
+		Personaje bustamante = new Personaje(Personaje.BUSTAMANTE, 1, random.nextInt(X_MAX + 1 - X_MIN) + X_MIN,
 				random.nextInt(3000));
 
-		personajes[0] = dory;
-		personajes[1] = manta;
-		personajes[2] = nemo;
-		personajes[3] = turtle;
-		personajes[4] = marlin;
-		personajes[5] = pulpo;
-		personajes[6] = shark;
-		personajes[7] = turtleBaby;
-		personajes[8] = whale;
+		personajes[0] = fariÃ±ez;
+		personajes[1] = sosa;
+		personajes[2] = cristian;
+		personajes[3] = jazmin;
+		personajes[4] = cuartas;
+		personajes[5] = jacker;
+		personajes[6] = miguel;
+		personajes[7] = omar;
+		personajes[8] = bustamante;
 
 	}
 
@@ -124,9 +124,9 @@ public class Partida {
 
 	}
 
-	// Este método sirve para ordenar el ArrayList de Jugadores registrados, con el
+	// Este mï¿½todo sirve para ordenar el ArrayList de Jugadores registrados, con el
 	// orden natural de la clase Jugador, que en este caso es ordenando
-	// segun el puntaje del jugador. (Utilicé el método de ordenamiento por
+	// segun el puntaje del jugador. (Utilicï¿½ el mï¿½todo de ordenamiento por
 	// seleccion)
 	public ArrayList<Jugador> ordenarJugadoresPorPuntaje(ArrayList<Jugador> jugadores) {
 
@@ -157,8 +157,8 @@ public class Partida {
 
 	}
 
-	// Este método permite organizar los jugadores registrados en orden alfabetico.
-	// (Orden parcial utilizando el método de ordenamiento por insercion)
+	// Este mï¿½todo permite organizar los jugadores registrados en orden alfabetico.
+	// (Orden parcial utilizando el mï¿½todo de ordenamiento por insercion)
 	public ArrayList<Jugador> ordenarJugadoresPorNombre(ArrayList<Jugador> jugadores) {
 
 		ArrayList<Jugador> ordenado = new ArrayList<Jugador>(jugadores);
@@ -180,8 +180,8 @@ public class Partida {
 
 	}
 
-	// Este método permite buscar a un jugador por su puntaje, utilizando la
-	// búsqueda binaria.
+	// Este mï¿½todo permite buscar a un jugador por su puntaje, utilizando la
+	// bï¿½squeda binaria.
 	public Jugador buscarJugadorPorPuntaje(int puntaje) throws PlayerNotFoundByScoreException, NullPointerException {
 
 		ArrayList<Jugador> ordenado = ordenarJugadoresPorPuntaje(players);

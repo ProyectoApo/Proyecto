@@ -2,15 +2,15 @@ package modelo;
 
 public class Personaje {
 
-	public final static String DORY = "dory";
-	public final static String NEMO = "nemo";
-	public final static String TURTLE = "turtle";
-	public final static String MANTA = "manta";
-	public final static String MARLIN = "marlin";
-	public final static String PULPO = "pulpo";
-	public final static String SHARK = "shark";
-	public final static String TURTLE_BABY = "turtlebaby";
-	public final static String WHALE = "whale";
+	public final static String FARIÑEZ = "fariñez";
+	public final static String CRISTIAN = "cristian";
+	public final static String JAZMIN = "jazmin";
+	public final static String SOSA = "sosa";
+	public final static String CUARTAS = "cuartas";
+	public final static String JACKER = "jacker";
+	public final static String MIGUEL = "miguel";
+	public final static String OMAR = "omar";
+	public final static String BUSTAMANTE = "bustamante";
 
 	private String nombre;
 	private int speed;
