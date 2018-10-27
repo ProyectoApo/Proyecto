@@ -16,6 +16,7 @@ public class Personaje {
 	private int speed;
 	private int posX;
 	private int posY;
+	private Personaje siguente;
 
 	public Personaje(String nombre, int speed, int posX, int posY) {
 
@@ -23,7 +24,7 @@ public class Personaje {
 		this.speed = speed;
 		this.posX = posX;
 		this.posY = posY;
-
+		this.siguente = null;
 	}
 
 	/**
@@ -98,6 +99,14 @@ public class Personaje {
 
 		posX = -100;
 
+	}
+
+	public Personaje getSiguente() {
+		return siguente;
+	}
+
+	public void setSiguente(Personaje siguente) {
+		this.siguente = siguente;
 	}
 
 }
