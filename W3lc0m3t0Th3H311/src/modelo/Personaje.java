@@ -2,7 +2,7 @@ package modelo;
 
 public class Personaje {
 
-	public final static String FARIÃ‘EZ = "fariÃ±ez";
+	public final static String FARIÑEZ = "fariñez";
 	public final static String CRISTIAN = "cristian";
 	public final static String JAZMIN = "jazmin";
 	public final static String SOSA = "sosa";
